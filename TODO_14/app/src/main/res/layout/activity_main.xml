@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="194dp"
+        android:layout_height="58dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Droid Desserts"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="138dp"
+        android:layout_height="120dp"
+        android:onClick="Donut"
+        android:src="@drawable/donut"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="112dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Donuts are glazed and sprinkled with candy"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image1"
+        android:layout_width="132dp"
+        android:layout_height="115dp"
+        android:onClick="Icecream"
+        android:src="@drawable/icecream"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="199dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Ice cream sandwiches have chocolate wafers and vanilla filling"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image2"
+        android:layout_width="138dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:onClick="Froyo"
+        android:src="@drawable/froyo"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="109dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="FroYo is premium Self-serve frozen yoggurt"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="61dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="telphone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="414dp"
+        android:layout_height="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/Theme.TODO_12.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/Theme.TODO_12.PopupOverlay"
+            android:layout_height="?actionBarSize"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
