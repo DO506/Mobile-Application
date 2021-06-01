@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="68dp"
+        android:text="Enter the marks of students" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/SecondName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/marks"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="ITW202 marks"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/SecondName"
+        android:layout_marginStart="50dp"
+        />
+    <EditText
+        android:id="@+id/idNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="ID Number"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/marks"
+        android:layout_marginStart="50dp"
+        />
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text = "ADD DATA"
+        android:layout_marginTop="30dp"
+       android:layout_marginStart="50dp"
+        android:onClick="AddData"
+        android:layout_below="@id/idNumber"
+        />
+    <Button
+        android:id="@+id/viewAll_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text = "VIEW ALL"
+        android:onClick="ViewAll"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/add_button"
+        />
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text = "UPDATE"
+        android:onClick="Update"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/viewAll_button"
+        />
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text = "DELETE"
+        android:onClick="delete"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/update_button"
+        />
+
+
+
+</RelativeLayout>
